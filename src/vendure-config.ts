@@ -106,6 +106,7 @@ export const config: VendureConfig = {
             }),
             adminUiConfig: {
                 apiPort: serverPort,
+
             },
         }),
     ],
