@@ -1,0 +1,35 @@
+{
+  "name": "b2b_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:server": "ts-node ./src/index.ts",
+    "dev:worker": "ts-node ./src/index-worker.ts",
+    "dev": "concurrently npm:dev:*",
+    "build": "tsc",
+    "start:server": "node ./dist/index.js",
+    "start:worker": "node ./dist/index-worker.js",
+    "start": "concurrently npm:start:*"
+  },
+  "dependencies": {
+    "@vendure/admin-ui": "^3.0.6",
+    "@vendure/admin-ui-plugin": "3.0.5",
+    "@vendure/asset-server-plugin": "3.0.5",
+    "@vendure/core": "^3.0.5",
+    "@vendure/email-plugin": "3.0.5",
+    "bcrypt": "^5.1.1",
+    "dotenv": "16.4.5",
+    "express-validator": "^7.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql": "2.18.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/react": "^18.3.12",
+    "@vendure/cli": "3.0.5",
+    "@vendure/ui-devkit": "^3.0.6",
+    "concurrently": "9.1.0",
+    "typescript": "5.3.3"
+  }
+}
