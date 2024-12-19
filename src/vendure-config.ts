@@ -10,7 +10,6 @@ import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import 'dotenv/config';
 import path from 'path';
-import { CustomUiPlugin } from './plugins/custom-ui/custom-ui.plugin';
 import { authRouter } from './routes/auth';
 
 const IS_DEV = process.env.APP_ENV === 'dev';
